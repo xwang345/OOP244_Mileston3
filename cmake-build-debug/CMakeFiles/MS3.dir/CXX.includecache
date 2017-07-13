@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/zhi/OOP-Project/MS3/MyFile.cpp
+iostream
+-
+fstream
+-
+cstring
+-
+MyFile.h
+C:/Users/zhi/OOP-Project/MS3/MyFile.h
+
+C:/Users/zhi/OOP-Project/MS3/MyFile.h
+Streamable.h
+C:/Users/zhi/OOP-Project/MS3/Streamable.h
+Streamable.h
+C:/Users/zhi/OOP-Project/MS3/Streamable.h
+Streamable.h
+C:/Users/zhi/OOP-Project/MS3/Streamable.h
+
+C:/Users/zhi/OOP-Project/MS3/Streamable.h
+MyFile.h
+C:/Users/zhi/OOP-Project/MS3/MyFile.h
+iostream
+-
+cstring
+-
+string
+-
+
+C:/Users/zhi/OOP-Project/MS3/StreamableTester.cpp
+iostream
+-
+MyFile.h
+C:/Users/zhi/OOP-Project/MS3/MyFile.h
+
