@@ -1,22 +1,24 @@
 //
-// Created by zhi on 2017-07-12.
+// Created by Xiaochen Wang on 2017-07-12.
 //
 
 #ifndef MS3_STREAMABLE_H
 #define MS3_STREAMABLE_H
-#include "MyFile.h"
+
 #include <iostream>
-#include <cstring>
-#include <string>
+#include <fstream>
+#include "MyFile.h"
 using namespace std;
 
 namespace sict{
     class Streamable {
+        // pure virutal function
+    public:
+        virtual fstream& store(fstream&, bool addNewLine = true)const =0;
+        virtual fstream& load(fstream&) = 0;
+        virtual ostream& write(ostream&, bool)const  = 0;
+        virtual istream& read(istream&) = 0;
 
-        virtual fstream& store(fstream& file, bool addNewLine = true)const =0;
-        virtual fstream& load(fstream& file) = 0;
-        virtual ostream& write(ostream& os, bool linear)const =0;
-        virtual istream& read(istream& is) = 0;
     };
 }
 
